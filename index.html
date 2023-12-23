@@ -7,10 +7,26 @@
     <title>Construction Equipments</title>
 
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="shortcut icon" href="images/logo (1) favicon.png" type="image/x-icon" />
     <!-- Custom styles for the carousel -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
         integrity="sha512-...your-sha512-code-here..." crossorigin="anonymous" />
+    <!-- Include jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <!-- jquery 3.3 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- slick 1.9 -->
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" rel="stylesheet" /> -->
+    <link href="slick.css" rel="stylesheet" />
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script> -->
+    <script src="slick.js"></script>
+    <link rel="stylesheet" href="products.css" />
+    <!--gsap link-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+
 </head>
 
 <body>
@@ -21,7 +37,7 @@
 
         <div class="container-fluid header-content">
             <div>
-                <p style="color: white;">Best Construction Equipment Supplier</p>
+                <p style="color: white;"></p>
             </div>
 
             <!-- Right Column (Social Icons) -->
@@ -42,28 +58,63 @@
                 <!-- Hamburger Icon for Small Devices -->
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <i class="fa fa-bars navbar-toggler-icon" aria-hidden="true"></i>
+                    <label class="hamburger">
+                        <input type="checkbox">
+                        <svg viewBox="0 0 32 32">
+                            <path class="line line-top-bottom"
+                                d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22">
+                            </path>
+                            <path class="line" d="M7 16 27 16"></path>
+                        </svg>
+                    </label>
                 </button>
                 <!-- Navigation Links (on the right) -->
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ml-auto nav-links">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Home</a>
+                        <li class="nav-item active">
+                            <button type="button" class="button">
+                                <a class="nav-link" href="#">
+                                    home
+                                </a>
+                            </button>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">About Us</a>
+                            <button type="button" class="button">
+                                <a class="nav-link" href="about.html">
+                                    About Us
+                                </a>
+                            </button>
+
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Our Customers</a>
+                            <button type="button" class="button">
+                                <a class="nav-link" href="customer.html">
+                                    Our Customers
+                                </a>
+                            </button>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Products</a>
+                            <button type="button" class="button">
+                                <a class="nav-link" href="products.html">
+                                    Products
+                                </a>
+                            </button>
+
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
+                            <button type="button" class="button">
+                                <a class="nav-link" href="contact.html">
+                                    Contact
+                                </a>
+                            </button>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Login</a>
+                            <button type="button" class="button">
+                                <a class="nav-link" href="login.html">
+                                    Login
+                                </a>
+                            </button>
+
                         </li>
                     </ul>
                 </div>
@@ -128,13 +179,102 @@
         </a>
     </div>
     <!-- Carousel End -->
-    <style>
+    <div class="section feature">
+        <div class="container">
 
-    </style>
-    <script>
+            <div class="row">
+                <div class="col-sm-12 col-md-12">
+                    <div class="row overlap feature-gutter">
 
-    </script>
-    <section class="">
+
+
+
+
+                        <div class="col-sm-4 col-md-4 border-right">
+                            <!-- BOX 1 -->
+                            <div class="feature-box-8">
+                                <div class="media">
+                                    <img id="ContentPlaceHolder1_Listview5_Image1_0" class="img-responsive"
+                                        src="images/slide-2.jpg" style="height:300px;width:400px;">
+                                </div>
+                                <div class="body">
+                                    <a href="services-detail.html" class="title">Honda Power Products</a>
+                                    <p>Industrial Equipment Centre, Honda Power Products distributor and dealers in
+                                        Secunderabad, Hyderabad, Telangana. Honda Power Generators, Water… </p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 col-md-4 border-right">
+                            <!-- BOX 1 -->
+                            <div class="feature-box-8">
+                                <div class="media">
+                                    <img id="ContentPlaceHolder1_Listview5_Image1_1" class="img-responsive"
+                                        src="images/slide-3.jpg" style="height:300px;width:400px;">
+                                </div>
+                                <div class="body">
+                                    <a href="services-detail.html" class="title">CONSTRUCTION EQUIPMENT</a>
+                                    <p>Reversible Drum Mixer, Bar Cutting Machine, Bar Bending Machine, Scaffolding
+                                        Accessories, Lifting Tools &amp; Tackles, etc.…</p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 col-md-4 border-right">
+                            <!-- BOX 1 -->
+                            <div class="feature-box-8">
+                                <div class="media">
+                                    <img id="ContentPlaceHolder1_Listview5_Image1_2" class="img-responsive"
+                                        src="images/slide-4.jpg" style="height:300px;width:400px;">
+                                </div>
+                                <div class="body">
+                                    <a href="services-detail.html" class="title">QC Lab Equipment</a>
+                                    <p>We provide all type of QC lab equipments.</p>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="row" style="padding-top: 2rem;">
+                <div class="spacer-70"></div>
+                <div class="col-sm-5 col-md-5">
+                    <div class="jumbo-heading">
+                        <h2>LEADING THE WAY IN EQUIPMENT SUPPLY</h2>
+                    </div>
+                    <p>We introduce ourselves as one of the largest Distributor / Dealer / Stockist for the construction
+                        machineries &amp; other equipments like Safety Equipment, Scaffolding Accessories, Lifting Tools
+                        &amp; Tackles, Material Handling and Lifting Equipments, etc. With the expertise gained from the
+                        last 30 years IEC have a predominant position in the field of infrastructure and construction
+                        industry especially well known for the quality and reliability.</p>
+
+                    <a class="btn btn-secondary" href="https://www.youtube.com/@cec2010">MORE VIDEOS</a>
+                    <div class="spacer-30"></div>
+                </div>
+
+                <div class="col-sm-6 col-md-6">
+                    <div class="vidimg">
+                        <div class="play-vid">
+                            <a class="popup-youtube" href="https://www.youtube.com/watch?v=y2HIt29OPsY"><span
+                                    class="fa fa-play fa-3x playvid"></span></a>
+                        </div>
+                        <img src="images/slide-1.jpg" alt="" class="img-responsive">
+                    </div>
+                </div>
+
+                <div class="clearfix"></div>
+                <div class="spacer-70"></div>
+            </div>
+
+        </div>
+    </div>
+    <!-- <section class="about-section">
         <div class="about container">
             <div class="products-top">
                 <div class="product 1">
@@ -184,25 +324,733 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
+    <!--prodcuts-->
+
+    <div class="section blog">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-12">
+                    <h2 class="section-heading">
+                        MOST SELLING PRODUCTS
+                    </h2>
+                </div>
+                <div class="col-sm-4 col-md-4">
+                    <!-- BOX 1 -->
+                    <div class="box-news-1">
+                        <div class="media gbr">
+                            <a href="product.aspx?id=73">
+                                <img id="ContentPlaceHolder1_Listview1_Image1_0" class="img-responsive"
+                                    src="images/slide-1.jpg" style="height:300px;width:400px;">
+                            </a>
+                        </div>
+                        <div class="body">
+                            <div class="meta">
+                                <span class="date"><i class="fa fa-clock-o"></i><b> sand pouring
+                                        cylinder</b></span>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-4">
+                    <!-- BOX 1 -->
+                    <div class="box-news-1">
+                        <div class="media gbr">
+                            <a href="product.aspx?id=72">
+                                <img id="ContentPlaceHolder1_Listview1_Image1_1" class="img-responsive"
+                                    src="images/slide-2.jpg" style="height:300px;width:400px;">
+                            </a>
+                        </div>
+                        <div class="body">
+
+                            <div class="meta">
+                                <span class="date"><i class="fa fa-clock-o"></i><b> core cutter
+                                        dolly</b></span>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-4">
+                    <!-- BOX 1 -->
+                    <div class="box-news-1">
+                        <div class="media gbr">
+                            <a href="product.aspx?id=71">
+                                <img id="ContentPlaceHolder1_Listview1_Image1_2" class="img-responsive"
+                                    src="images/slide-3.jpg" style="height:300px;width:400px;">
+                            </a>
+                        </div>
+                        <div class="body">
+
+                            <div class="meta">
+                                <span class="date"><i class="fa fa-clock-o"></i><b> liqud limit </b></span>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="col-sm-4 col-md-4">
+                    <!-- BOX 1 -->
+                    <div class="box-news-1">
+                        <div class="media gbr">
+                            <a href="product.aspx?id=70">
+                                <img id="ContentPlaceHolder1_Listview1_Image1_3" class="img-responsive"
+                                    src="images/slide-4.jpg" style="height:300px;width:400px;">
+                            </a>
+                        </div>
+                        <div class="body">
+
+                            <div class="meta">
+                                <span class="date"><i class="fa fa-clock-o"></i><b> CUBE MOULDS</b></span>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="col-sm-4 col-md-4">
+                    <!-- BOX 1 -->
+                    <div class="box-news-1">
+                        <div class="media gbr">
+                            <a href="product.aspx?id=69">
+                                <img id="ContentPlaceHolder1_Listview1_Image1_4" class="img-responsive"
+                                    src="images/slide-1.jpg" style="height:300px;width:400px;">
+                            </a>
+                        </div>
+                        <div class="body">
+
+                            <div class="meta">
+                                <span class="date"><i class="fa fa-clock-o"></i><b> compression testing
+                                        machine</b></span>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="col-sm-4 col-md-4">
+                    <!-- BOX 1 -->
+                    <div class="box-news-1">
+                        <div class="media gbr">
+                            <a href="product.aspx?id=68">
+                                <img id="ContentPlaceHolder1_Listview1_Image1_5" class="img-responsive"
+                                    src="images/slide-1.jpg" style="height:300px;width:400px;">
+                            </a>
+                        </div>
+                        <div class="body">
+
+                            <div class="meta">
+                                <span class="date"><i class="fa fa-clock-o"></i><b> HONDA PIN
+                                        VIBRATOR</b></span>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="col-sm-4 col-md-4">
+                    <!-- BOX 1 -->
+                    <div class="box-news-1">
+                        <div class="media gbr">
+                            <a href="product.aspx?id=67">
+                                <img id="ContentPlaceHolder1_Listview1_Image1_6" class="img-responsive"
+                                    src="images/slide-3.jpg" style="height:300px;width:400px;">
+                            </a>
+                        </div>
+                        <div class="body">
+
+                            <div class="meta">
+                                <span class="date"><i class="fa fa-clock-o"></i><b> VICAT NEEDLE</b></span>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--products-list-->
+    <div class="section blog">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-sm-12 col-md-12">
+                    <h2 class="section-heading">
+                        CATEGORIES
+                    </h2>
+                </div>
+                <div class="col-sm-3 col-md-3">
+                    <!-- BOX 1 -->
+                    <div class="box-news-1">
+                        <div class="media gbr">
+                            <a href="subservice.aspx?category=QC LAB TESTING EQUIPMENTS">
+                                <img id="ContentPlaceHolder1_Listview4_Image1_0" class="img-responsive"
+                                    src="images/slide-1.jpg" style="height:200px;width:300px;">
+                            </a>
+                        </div>
+                        <div class="body">
+
+                            <div class="meta">
+                                <span class="date"><i class="fa fa-clock-o"></i><b> QC LAB TESTING EQUIPMENTS</b></span>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="col-sm-3 col-md-3">
+                    <!-- BOX 1 -->
+                    <div class="box-news-1">
+                        <div class="media gbr">
+                            <a href="subservice.aspx?category=CONSTRUCTION EQUIPMENTS">
+                                <img id="ContentPlaceHolder1_Listview4_Image1_1" class="img-responsive"
+                                    src="images/slide-2.jpg" style="height:200px;width:300px;">
+                            </a>
+                        </div>
+                        <div class="body">
+
+                            <div class="meta">
+                                <span class="date"><i class="fa fa-clock-o"></i><b> CONSTRUCTION EQUIPMENTS</b></span>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-md-3">
+                    <!-- BOX 1 -->
+                    <div class="box-news-1">
+                        <div class="media gbr">
+                            <a href="subservice.aspx?category=POWER TOOLS">
+                                <img id="ContentPlaceHolder1_Listview4_Image1_2" class="img-responsive"
+                                    src="images/slide-3.jpg" style="height:200px;width:300px;">
+                            </a>
+                        </div>
+                        <div class="body">
+
+                            <div class="meta">
+                                <span class="date"><i class="fa fa-clock-o"></i><b> POWER TOOLS</b></span>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--products-list-->
+
+    <!-- <div class="section project bg-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-12">
+                    <h2 class="section-heading white">
+                        Sub Categories
+                    </h2>
+                </div>
+                <div class="clearfix"></div>
+
+                <div id="caro-project" class="owl-carousel owl-theme owl-loaded">
+                                        <div class="owl-stage-outer">
+                        <div class="owl-stage"
+                            style="transform: translate3d(-760px, 0px, 0px); transition: all 0s ease 0s; width: 4180px;">
+                            <div class="owl-item cloned" style="width: 370px; margin-right: 10px;">
+                                <div class="item">
+                                    <div class="feature-box-7">
+                                        <div class="media">
+                                            <a href="listing.aspx?subservice=HONDA POWER TOOLS">
+                                                <img id="ContentPlaceHolder1_Listview3_Image1_5" class="img-responsive"
+                                                    src="images/slide-1.jpg" style="height:300px;width:400px;">
+                                            </a>
+                                        </div>
+                                        <div class="body">
+                                            <div class="info-box">
+                                                <div class="text">
+                                                    <div class="title">HONDA POWER TOOLS</div>
+                                                    <p>POWER TOOLS</p>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="owl-item cloned" style="width: 370px; margin-right: 10px;">
+                                <div class="item">
+                                    <div class="feature-box-7">
+                                        <div class="media">
+                                            <a href="listing.aspx?subservice=ALL EQUIPMENTS">
+                                                <img id="ContentPlaceHolder1_Listview3_Image1_6" class="img-responsive"
+                                                    src="images/slide-2.jpg" style="height:300px;width:400px;">
+                                            </a>
+                                        </div>
+                                        <div class="body">
+                                            <div class="info-box">
+                                                <div class="text">
+                                                    <div class="title">ALL EQUIPMENTS</div>
+                                                    <p>CONSTRUCTION EQUIPMENTS</p>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="owl-item active" style="width: 370px; margin-right: 10px;">
+                                <div class="item">
+                                    <div class="feature-box-7">
+                                        <div class="media">
+                                            <a href="listing.aspx?subservice=CONCRETE TESTING">
+                                                <img id="ContentPlaceHolder1_Listview3_Image1_0" class="img-responsive"
+                                                    src="images/slide-3.jpg" style="height:300px;width:400px;">
+                                            </a>
+                                        </div>
+                                        <div class="body">
+                                            <div class="info-box">
+                                                <div class="text">
+                                                    <div class="title">CONCRETE TESTING</div>
+                                                    <p>QC LAB TESTING EQUIPMENTS</p>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="owl-item active" style="width: 370px; margin-right: 10px;">
+                                <div class="item">
+                                    <div class="feature-box-7">
+                                        <div class="media">
+                                            <a href="listing.aspx?subservice=SOIL TESTING ">
+                                                <img id="ContentPlaceHolder1_Listview3_Image1_1" class="img-responsive"
+                                                    src="images/slide-4.jpg" style="height:300px;width:400px;">
+                                            </a>
+                                        </div>
+                                        <div class="body">
+                                            <div class="info-box">
+                                                <div class="text">
+                                                    <div class="title">SOIL TESTING </div>
+                                                    <p>QC LAB TESTING EQUIPMENTS</p>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="owl-item" style="width: 370px; margin-right: 10px;">
+                                <div class="item">
+                                    <div class="feature-box-7">
+                                        <div class="media">
+                                            <a href="listing.aspx?subservice=AGGREGATE TESTING ">
+                                                <img id="ContentPlaceHolder1_Listview3_Image1_2" class="img-responsive"
+                                                    src="images/slide-1.jpg" style="height:300px;width:400px;">
+                                            </a>
+                                        </div>
+                                        <div class="body">
+                                            <div class="info-box">
+                                                <div class="text">
+                                                    <div class="title">AGGREGATE TESTING </div>
+                                                    <p>QC LAB TESTING EQUIPMENTS</p>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="owl-item" style="width: 370px; margin-right: 10px;">
+                                <div class="item">
+                                    <div class="feature-box-7">
+                                        <div class="media">
+                                            <a href="listing.aspx?subservice=CEMENT TESTING EQUIMENTS">
+                                                <img id="ContentPlaceHolder1_Listview3_Image1_3" class="img-responsive"
+                                                    src="images/slide-2.jpg" style="height:300px;width:400px;">
+                                            </a>
+                                        </div>
+                                        <div class="body">
+                                            <div class="info-box">
+                                                <div class="text">
+                                                    <div class="title">CEMENT TESTING EQUIMENTS</div>
+                                                    <p>QC LAB TESTING EQUIPMENTS</p>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="owl-item" style="width: 370px; margin-right: 10px;">
+                                <div class="item">
+                                    <div class="feature-box-7">
+                                        <div class="media">
+                                            <a href="listing.aspx?subservice=DEWALT POWER TOOLS">
+                                                <img id="ContentPlaceHolder1_Listview3_Image1_4" class="img-responsive"
+                                                    src="images/slide-3.jpg" style="height:300px;width:400px;">
+                                            </a>
+                                        </div>
+                                        <div class="body">
+                                            <div class="info-box">
+                                                <div class="text">
+                                                    <div class="title">DEWALT POWER TOOLS</div>
+                                                    <p>POWER TOOLS</p>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="owl-item" style="width: 370px; margin-right: 10px;">
+                                <div class="item">
+                                    <div class="feature-box-7">
+                                        <div class="media">
+                                            <a href="listing.aspx?subservice=HONDA POWER TOOLS">
+                                                <img id="ContentPlaceHolder1_Listview3_Image1_5" class="img-responsive"
+                                                    src="images/slide-4.jpg" style="height:300px;width:400px;">
+                                            </a>
+                                        </div>
+                                        <div class="body">
+                                            <div class="info-box">
+                                                <div class="text">
+                                                    <div class="title">HONDA POWER TOOLS</div>
+                                                    <p>POWER TOOLS</p>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="owl-item" style="width: 370px; margin-right: 10px;">
+                                <div class="item">
+                                    <div class="feature-box-7">
+                                        <div class="media">
+                                            <a href="listing.aspx?subservice=ALL EQUIPMENTS">
+                                                <img id="ContentPlaceHolder1_Listview3_Image1_6" class="img-responsive"
+                                                    src="images/slide-2.jpg" style="height:300px;width:400px;">
+                                            </a>
+                                        </div>
+                                        <div class="body">
+                                            <div class="info-box">
+                                                <div class="text">
+                                                    <div class="title">ALL EQUIPMENTS</div>
+                                                    <p>CONSTRUCTION EQUIPMENTS</p>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="owl-item cloned" style="width: 370px; margin-right: 10px;">
+                                <div class="item">
+                                    <div class="feature-box-7">
+                                        <div class="media">
+                                            <a href="listing.aspx?subservice=CONCRETE TESTING">
+                                                <img id="ContentPlaceHolder1_Listview3_Image1_0" class="img-responsive"
+                                                    src="images/slide-3.jpg" style="height:300px;width:400px;">
+                                            </a>
+                                        </div>
+                                        <div class="body">
+                                            <div class="info-box">
+                                                <div class="text">
+                                                    <div class="title">CONCRETE TESTING</div>
+                                                    <p>QC LAB TESTING EQUIPMENTS</p>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="owl-item cloned" style="width: 370px; margin-right: 10px;">
+                                <div class="item">
+                                    <div class="feature-box-7">
+                                        <div class="media">
+                                            <a href="listing.aspx?subservice=SOIL TESTING ">
+                                                <img id="ContentPlaceHolder1_Listview3_Image1_1" class="img-responsive"
+                                                    src="Handler2.ashx?id=192" style="height:300px;width:400px;">
+                                            </a>
+                                        </div>
+                                        <div class="body">
+                                            <div class="info-box">
+                                                <div class="text">
+                                                    <div class="title">SOIL TESTING </div>
+                                                    <p>QC LAB TESTING EQUIPMENTS</p>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="owl-controls">
+                        <div class="owl-nav">
+                            <div class="owl-prev" style=""><span class="fa fa-chevron-left"></span></div>
+                            <div class="owl-next" style=""><span class="fa fa-chevron-right"></span></div>
+                        </div>
+                        <div class="owl-dots" style="display: block;">
+                            <div class="owl-dot active"><span></span></div>
+                            <div class="owl-dot"><span></span></div>
+                            <div class="owl-dot"><span></span></div>
+                            <div class="owl-dot"><span></span></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div> -->
+    <!--Products Carousel-->
+    <h2 class="section-heading white" style="color: #153662;">
+        Sub Categories
+    </h2>
+    <main class="py-4">
+        <div class="container">
+            <div id="slick">
+                <div class="slide1">
+                    <img src="images/slide-1.jpg" />
+                </div>
+                <div class="slide1">
+                    <img src="images/slide-1.jpg" />
+                </div>
+                <div class="slide1">
+                    <img src="images/slide-1.jpg" />
+                </div>
+                <div class="slide1">
+                    <img src="images/slide-1.jpg" />
+                </div>
+                <div class="slide1">
+                    <img src="images/slide-1.jpg" />
+                </div>
+                <div class="slide1">
+                    <img src="images/slide-1.jpg" />
+                </div>
+                <div class="slide1">
+                    <img src="images/slide-1.jpg" />
+                </div>
+                <div class="slide1">
+                    <img src="images/slide-1.jpg" />
+                </div>
+                <div class="slide1">
+                    <img src="images/slide-1.jpg" />
+                </div>
+                <div class="slide1">
+                    <img src="images/slide-1.jpg" />
+                </div>
+            </div>
+        </div>
+    </main>
+    <!--Products Carousel-->
+    <!--address-->
+    <div class="section info overlap-bottom">
+        <div class="container">
+            <div class="row gutter-20">
+
+                <div class="col-sm-4 col-md-4">
+                    <!-- BOX 1 -->
+                    <div class="box-icon-4">
+                        <div class="icon"><a href="tel:+919959997132"><i class="fa fa-phone" aria-hidden="true"></i></a>
+                        </div>
+                        <div class="body-content">
+                            <div class="heading">CALL US NOW</div>
+                            Mobile: <span id="Label6">9959997132,8143007132</span> <br>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-4">
+                    <!-- BOX 2 -->
+                    <div class="box-icon-4">
+                        <div class="icon"><a
+                                href="https://www.google.com/maps/place/T19+TOWER,+5-4-187%2F6,+Mahatma+Gandhi+Rd,+Karbala+Maidan,+Rani+Gunj,+Secunderabad,+Hyderabad,+Telangana+500003/@17.4288869,78.4848003,17z/data=!3m1!4b1!4m5!3m4!1s0x3bcb9a1d4515d831:0xbddd57a426729de6!8m2!3d17.4288818!4d78.4873752?authuser=0&entry=ttu"><i
+                                    class="fa fa-map-marker"></i></a></div>
+                        <div class="body-content">
+                            <div class="heading">COME VISIT US</div>
+                            <span id="Label7"># 5-4-93,M.G ROAD, RANIGUNJ,OPP: T19 TOWER, SECUNDERABAD-500003</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-4">
+                    <!-- BOX 3 -->
+                    <div class="box-icon-4">
+                        <div class="icon"><a href="mailto:constructionequipmentcentre@gmail.com"><i
+                                    class="fa fa-envelope"></i></a></div>
+                        <div class="body-content">
+                            <div class="heading">SEND US A MESSAGE</div>
+                            <p> <span id="Label8">constructionequipmentcentre@gmail.com</span></p>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <!--address-->
+    <!--footer-->
+    <div class="footer">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-sm-3 col-md-3">
+                    <div class="footer-item">
+                        <img src="images/logo (1).png" alt="logo bottom" class="logo-bottom">
+                        <p>
+
+                            <span id="Label1">We provide Highly durable, Premium quality, All types of Constrution
+                                Equiments.</span>
+
+
+                        </p>
+                        <div class="footer-sosmed">
+
+
+
+                            <a id="HyperLink1" href="https://www.facebook.com/constructionsequipmentcentre">
+
+                                <div class="item">
+                                    <i class="fab fa-facebook"></i>
+                                </div>
+                            </a>
+
+
+
+                            <a id="HyperLink2" href="https://twitter.com/constructionsequipmentcentre">
+
+                                <div class="item">
+                                    <i class="fab fa-twitter"></i>
+                                </div>
+                            </a>
+                            <a id="HyperLink3" href="https://www.instagram.com/constructionsequipmentcentre">
+
+                                <div class="item">
+                                    <i class="fab fa-instagram"></i>
+                                </div>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-md-3">
+                    <div class="footer-item">
+                        <div class="footer-title">
+                            Contact Us
+                        </div>
+                        <ul class="recent-post">
+                            <li><a title="">
+                                    <span id="Label3"># 5-4-93,M.G ROAD, RANIGUNJ,OPP: T19 TOWER,
+                                        SECUNDERABAD-500003</span></a>
+
+
+
+
+                                <a title=""> <span id="Label4">9959997132,8143007132</span></a>
+
+
+                                <a" title=""> <span id="Label5">constructionequipmentcentre@gmail.com</span>
+
+
+
+
+
+                                </a">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-md-3">
+                    <div class="footer-item">
+                        <div class="footer-title">
+                            Useful Links
+                        </div>
+                        <ul class="list">
+                            <li><a href="index.aspx">Home</a></li>
+                            <li><a href="aboutus.aspx">About Us</a></li>
+
+                            <li><a href="contact.aspx">Contact Us</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-md-3">
+                    <div class="footer-item">
+                        <div class="footer-title">
+                            Subscribe
+                        </div>
+                        <p>Subcription helps you get latest news and updates from us.</p>
+                        <form action="#" class="footer-subscribe">
+                            <input type="email" name="EMAIL" class="form-control" placeholder="enter your email">
+                            <input id="p_submit" type="submit" value="send">
+                            <label for="p_submit"><i class="fa fa-envelope"></i></label>
+                            <p>Get latest updates and offers.</p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="fcopy">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-12">
+                        <p class="ftex">
+                            <span id="Label2">© 2023 by Construction Equipment Centre</span> - All Rights Reserved
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!--footer-->
+    <style>
+
+    </style>
+
+
 
     <script>
-        // Add a class to the header when scrolling down, remove it when scrolling back to the top
-        document.addEventListener("scroll", function () {
-            var header = document.getElementById("header");
-            if (window.scrollY > 0) {
-                header.classList.add("scrolled");
-            } else {
-                header.classList.remove("scrolled");
-            }
-        });
-    </script>
+        gsap.from(".logo", {
+            scale: 0,
+            opacity: 0,
+            duration: 2,
+        })
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    </script>
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
 </body>
 
 </html>
